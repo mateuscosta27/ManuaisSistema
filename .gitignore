@@ -1,0 +1,51 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtualenv / Ambiente
+venv/
+ENV/
+env/
+.venv/
+.Python
+
+# Configs de IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de log / output
+*.log
+*.out
+*.bak
+
+# Test coverage
+htmlcov/
+.coverage
+.cache
+.tox/
+.nox/
+.pytest_cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Dados sensíveis / configs locais
+.env
+.env.*
+
+# Mac / Linux / Windows lixos temporários
+.DS_Store
+Thumbs.db
+
+
+
+# Ignora todos os arquivos .json
+*.json

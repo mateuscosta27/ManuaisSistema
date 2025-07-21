@@ -1,0 +1,42 @@
+site_name: Manuais do sistema
+site_url: https://meudoc.com.br
+
+nav:
+  - Links Uteis: links_uteis.md
+  - Instalacao SIA 7.5: instalacao_sia7.md
+theme: material
+
+theme:
+  name: material
+  langue: pt-br
+  palette:
+    - scheme: default
+      primary: deep blue
+      accent: blue
+    - scheme: slate
+      primary: deep purple
+      accent: green
+  features:
+    
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+  navigation_depth: 2
+
+plugins:
+  - search
+  
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+extra_css:
+  - style/extra.css

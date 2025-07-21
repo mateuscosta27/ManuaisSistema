@@ -1,0 +1,42 @@
+/* Espaçamento maior entre blocos colapsáveis */
+.md-typeset details {
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+/* Aumenta o padding apenas dos details internos */
+.md-typeset details details {
+    padding-left: 25px;
+}
+
+/* Remove bordas e sombras dos blocos colapsáveis */
+.md-typeset details,
+.md-typeset details > summary,
+.md-typeset .details-control,
+.md-typeset .details-control .md-typeset {
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Substitui o ícone de lápis azul por emoji 🛠️ */
+.md-typeset .md-icon svg[data-name="edit"],
+.md-typeset .md-icon svg[data-name="pencil"] {
+    opacity: 0 !important;
+}
+
+.md-typeset .md-icon svg[data-name="edit"]::after,
+.md-typeset .md-icon svg[data-name="pencil"]::after {
+    content: "🛠️";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    opacity: 1;
+}
+
+
+.md-typeset .admonition-title::before,
+.md-typeset details > summary::before {
+  content: none !important;
+}
